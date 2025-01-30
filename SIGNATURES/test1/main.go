@@ -80,7 +80,7 @@ func main() {
 	fmt.Println("Private key generated successfully:", privateKey)
 	filename := "test.txt"
 	signature, _ := signatureoffile(filename, privateKey)
-	fmt.Println(signature)
+	fmt.Println("the signature of the file : ", signature)
 
 	publicKey := &privateKey.PublicKey
 
